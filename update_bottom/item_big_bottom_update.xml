@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="@dimen/_16"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        app:cardCornerRadius="@dimen/_8"
+        android:layout_marginHorizontal="@dimen/_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bigImageView"
+            android:src="@drawable/lake"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"/>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/content_text_view"
+        android:layout_marginHorizontal="@dimen/_16"
+        android:layout_marginTop="@dimen/_8"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/text_size_medium"
+        android:text="Vietnam - An Ideal Destination For Long-term Business Investment"
+        tools:text="Vietnam - An Ideal Destination For Long-term Business Investment"
+        android:textColor="@color/text_nav"
+        android:lineHeight="21sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.oneibc.common.view.ChipGroupView
+        android:id="@+id/chipGroupView"
+        android:layout_marginHorizontal="@dimen/_16"
+        android:layout_marginTop="@dimen/_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

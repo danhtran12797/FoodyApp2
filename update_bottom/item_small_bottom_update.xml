@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="@dimen/_16">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSmallImage"
+        android:layout_marginEnd="@dimen/_16"
+        app:cardCornerRadius="@dimen/_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="80dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/smallImageView"
+            android:src="@drawable/lake"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/content_text_view"
+        android:layout_marginEnd="@dimen/_8"
+        android:layout_marginStart="@dimen/_16"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/text_nav"
+        android:text="Vietnam - An Ideal Destination For Long-term Business Investment"
+        tools:text="Vietnam - An Ideal Destination For Long-term Business Investment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardSmallImage"
+        app:layout_constraintBottom_toBottomOf="@+id/cardSmallImage"
+        app:layout_constraintEnd_toStartOf="@+id/cardSmallImage"
+        android:ellipsize="end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <com.oneibc.common.view.ChipGroupView
+        android:id="@+id/chipGroupView"
+        android:layout_marginHorizontal="@dimen/_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardSmallImage"
+        android:layout_marginTop="@dimen/_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
